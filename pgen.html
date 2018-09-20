@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- meta for SEO optimization -->
+<meta name="description" content=" A simple password generator app made with javascript, this webapp generates random alphanumerical passwords only with possibility to choose the passwords length">
+<meta name="og:title" property="og:title" content="P-GEN a simple password generator">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script type="text/javascript" src="../PGEN/assets/js/generate.js"></script>
+    <title>P-GEN</title>
+  </head>
+  <body>
+
+    <main role="main" class="container">
+  <div>
+<h1>P-GEN</h1><hr>
+<h2> A SIMPLE PASSWORD GENERATOR</h2>
+</div>  
+  <form  name="myform" method="GET" action="">
+    <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="length">Password length :</label>
+      <input type="input" class="form-control" name="length" value="10" size="40">      
+    </div>
+      <div class="form-group col-md-6">
+      <label for="length">Password :</label>
+      <input name="row_password" class="form-control" type="text" size="40"><br>      
+    </div>
+  </div>     
+  <div class="form-group row">
+    <div class="col-sm-10">
+      <button type="button" class="btn btn-primary" onClick="generate();" >Generate Password</button>
+    </div>
+  </div>
+  </form> 
+</main >
+<footer class="footer">
+  <div class="container">
+    <span class="text-muted">P-GEN &copy; password generation tool by <a href="herisatry.com">herisatry L</a> , 2018  </span>
+  </div>
+</footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+
+</html>
