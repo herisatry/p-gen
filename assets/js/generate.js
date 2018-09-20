@@ -11,3 +11,15 @@ function randomPassword(length) {
 function generate() {
     myform.row_password.value = randomPassword(myform.length.value);
 }
+
+function clipBoard() {
+    /* Get the text field */
+    var copyText = document.getElementById("genPass");
+  
+    /* Select the text field */
+    copyText.select();
+  
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+  
+  }
