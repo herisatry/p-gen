@@ -22,22 +22,41 @@
 </div>  
   <form  name="myform" method="GET" action="">
     <div class="form-row">
-    <div class="form-group col-md-6">
+<!-- password length starts here -->
+
+    <div class="form-group col-md-12">
       <label for="length">Password length :</label>
-      <input type="input" class="form-control" name="length" value="10" size="40">      
+
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="length">
+          <option selected>Choose...</option>
+          <option value="8">8</option>
+          <option value="10">10</option>
+          <option value="12">12</option>
+          <option value="14">14</option>
+          <option value="16">16</option>
+          <option value="18">18</option>
+          <option value="20">20</option>
+        </select>
     </div>
-      <div class="form-group col-md-6">
+<!-- generated password starts here -->
+  
+  <div class="form-group col-md-12">
       <label for="length">Password :</label>
-      <input name="row_password" class="form-control" type="text" size="40"><br>      
-    </div>
-  </div>     
-  <div class="form-group row">
-    <div class="col-sm-10">
-      <button type="button" class="btn btn-primary" onClick="generate();" >Generate Password</button>
-    </div>
+      <div class="input-group mb-3">
+      <input name="row_password" id="genPass" class="form-control" type="text" readonly >
+      <div class="input-group-append">
+          <button type="button" class="btn btn-outline-secondary" onClick="generate();" >Generate</button>
+        <button class="btn btn-outline-secondary" type="button" onClick="clipBoard();">Copy</button>
+      </div>      
+      </div>
   </div>
+  </div>
+  
   </form> 
 </main >
+
+<!-- footer -->
+
 <footer class="footer">
   <div class="container">
     <span class="text-muted">P-GEN &copy; password generation tool by <a href="herisatry.com">herisatry L</a> , 2018  </span>
